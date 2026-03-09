@@ -1,0 +1,111 @@
+{
+  "promociones": [
+    {
+      "id": "201",
+      "title": "2x1 en Zapatillas Deportivas",
+      "description": "Oferta especial en calzado deportivo de temporada",
+      "image": "https://picsum.photos/400/300?random=41",
+      "price": 89.99,
+      "date": "2026-02-01",
+      "activa": true,
+      "categoria": "calzado"
+    },
+    {
+      "id": "202",
+      "title": "Descuento en Camisetas de Algodón",
+      "description": "Nueva colección de camisetas primavera",
+      "image": "https://picsum.photos/400/300?random=42",
+      "price": 29.5,
+      "date": "2026-02-02",
+      "activa": true,
+      "categoria": "ropa-superior"
+    },
+    {
+      "id": "203",
+      "title": "Jeans Slim Fit Oferta",
+      "description": "Descuento en pantalones vaqueros",
+      "image": "https://picsum.photos/400/300?random=43",
+      "price": 70,
+      "date": "2026-02-03",
+      "activa": false,
+      "categoria": "ropa-inferior"
+    },
+    {
+      "id": "204",
+      "title": "Zapatillas Running Profesionales",
+      "description": "Calzado de alta resistencia para running",
+      "image": "https://picsum.photos/400/300?random=44",
+      "price": 120,
+      "date": "2026-02-04",
+      "activa": true,
+      "categoria": "calzado"
+    },
+    {
+      "id": "205",
+      "title": "Gafas de Sol Premium",
+      "description": "Accesorios de moda para verano",
+      "image": "https://picsum.photos/400/300?random=45",
+      "price": 75,
+      "date": "2026-02-05",
+      "activa": true,
+      "categoria": "accesorios"
+    },
+    {
+      "id": "206",
+      "title": "Chaqueta de Invierno",
+      "description": "Chaqueta térmica resistente al frío",
+      "image": "https://picsum.photos/400/300?random=46",
+      "price": 150,
+      "date": "2026-02-06",
+      "activa": false,
+      "categoria": "ropa-superior"
+    },
+    {
+      "id": "207",
+      "title": "Sudadera Urbana",
+      "description": "Estilo casual urbano",
+      "image": "https://picsum.photos/400/300?random=47",
+      "price": 55,
+      "date": "2026-02-07",
+      "activa": true,
+      "categoria": "ropa-superior"
+    },
+    {
+      "id": "208",
+      "title": "Pantalón Deportivo",
+      "description": "Ideal para entrenamiento",
+      "image": "https://picsum.photos/400/300?random=48",
+      "price": 48,
+      "date": "2026-02-08",
+      "activa": true,
+      "categoria": "ropa-inferior"
+    },
+    {
+      "id": "209",
+      "title": "Mochila Deportivas",
+      "description": "Mochila ligera y resistente",
+      "image": "https://picsum.photos/400/300?random=49",
+      "price": 40,
+      "date": "2026-02-09",
+      "activa": false,
+      "categoria": "accesorios"
+    },
+    {
+      "id": "210",
+      "title": "Mega Oferta General Tienda",
+      "description": "Descuentos en toda la tienda",
+      "image": "https://picsum.photos/400/300?random=50",
+      "price": 200,
+      "date": "2026-02-10",
+      "activa": true,
+      "categoria": "general"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    }
+  ]
+}

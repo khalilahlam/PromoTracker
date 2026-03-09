@@ -1,0 +1,53 @@
+<div class="login-scene">
+  
+  <div class="login-card">
+    
+    <div class="card-header">
+      <div class="logo-circle">
+        <span>PT</span>
+      </div>
+      <h1>PromoTracker</h1>
+      <p>Gestión de promociones</p>
+    </div>
+
+    <form (ngSubmit)="login()">
+      
+      <div class="input-group">
+        <input 
+          type="text" 
+          [(ngModel)]="username" 
+          name="username"
+          placeholder=" "
+          required>
+        <label>Usuario</label>
+      </div>
+
+      <div class="input-group">
+        <input 
+          type="password" 
+          [(ngModel)]="password" 
+          name="password"
+          placeholder=" "
+          required>
+        <label>Contraseña</label>
+      </div>
+
+      @if(error) {
+        <div class="error-box">
+          {{error}}
+        </div>
+      }
+
+      <button type="submit">
+        Iniciar Sesión
+      </button>
+
+    </form>
+
+    <div class="footer-text">
+      Demo: admin / admin123
+    </div>
+
+  </div>
+
+</div>

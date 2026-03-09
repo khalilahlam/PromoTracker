@@ -1,0 +1,146 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff 0%, #f9fafb 100%);
+}
+
+.dashboard-container {
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.stat-card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  background: white;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h3 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.chart-card {
+  height: 100%;
+  min-height: 400px;
+}
+
+.chart-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+canvas {
+  max-height: 300px;
+  width: 100% !important;
+}
+.promo-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.promo-item:hover {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.promo-item:last-child {
+  border-bottom: none;
+}
+
+.promo-item strong {
+  font-size: 16px;
+  color: #1f2937;
+  font-family: 'Poppins', sans-serif;
+}
+
+.promo-item small {
+  font-size: 13px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary {
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.btn-outline-primary:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+  border: 2px solid #6b7280;
+  color: #6b7280;
+}
+
+.btn-outline-secondary:hover {
+  background: #6b7280;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding-top: 70px;
+  }
+
+  .stat-card h3 {
+    font-size: 32px;
+  }
+
+  .chart-card {
+    min-height: 350px;
+  }
+}

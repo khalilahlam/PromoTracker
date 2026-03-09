@@ -1,0 +1,19 @@
+.footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
+
+.footer a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.footer a.active {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #1f2937;
+}

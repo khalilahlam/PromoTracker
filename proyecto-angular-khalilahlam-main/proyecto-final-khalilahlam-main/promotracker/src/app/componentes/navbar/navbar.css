@@ -1,0 +1,41 @@
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #8287f3 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(107, 77, 238);
+}
+
+.nav-link.active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #667eea;
+}
+.btn-login-nav {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px;
+  padding: 8px 16px !important;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-login-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}

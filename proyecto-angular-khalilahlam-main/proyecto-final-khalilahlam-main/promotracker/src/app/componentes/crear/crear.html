@@ -1,0 +1,163 @@
+<div class="container form-wrapper">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8 col-xl-7">
+
+      <div class="form-card">
+
+        <div class="form-header text-center mb-4">
+          <h2 class="form-title">Crear Nueva Promoción</h2>
+          <p class="form-subtitle">Completa los datos para añadir una nueva oferta</p>
+        </div>
+
+        <form (ngSubmit)="addPromocion()" #formPromocion="ngForm">
+
+          <div class="row g-4">
+
+            <div class="col-12">
+              <label class="form-label">Nombre</label>
+
+              <input type="text"
+                     class="form-control"
+                     name="title"
+                     [(ngModel)]="newPromocion.title"
+                     placeholder="Ej: 2x1 en zapatillas deportivas"
+                     required
+                     minlength="3"
+                     maxlength="100"
+                     #title="ngModel">
+
+              @if(title.invalid && title.touched){
+                <div class="text-danger small">
+                  ⚠ Nombre inválido (mínimo 3 caracteres, solo letras y números)
+                </div>
+              }
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label">Fecha</label>
+
+              <input type="date"
+                     class="form-control"
+                     name="date"
+                     [(ngModel)]="newPromocion.date"
+                     required
+                     #date="ngModel">
+
+              @if(date.invalid && date.touched){
+                <div class="text-danger small">
+                  ⚠ Selecciona una fecha
+                </div>
+              }
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label">Precio</label>
+
+              <input type="number"
+                     class="form-control"
+                     name="price"
+                     min="0"
+                     step="0.01"
+                     [(ngModel)]="newPromocion.price"
+                     required
+                     #price="ngModel">
+
+              @if(price.invalid && price.touched){
+                <div class="text-danger small">
+                  ⚠ Precio inválido
+                </div>
+              }
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Descripción</label>
+
+              <textarea class="form-control"
+                        rows="3"
+                        name="description"
+                        [(ngModel)]="newPromocion.description"
+                        placeholder="Describe la promoción..."
+                        maxlength="300"
+                        minlength="10"
+                        required
+                        #description="ngModel">
+              </textarea>
+
+              @if(description.invalid && description.touched){
+                <div class="text-danger small">
+                  ⚠ Mínimo 10 caracteres
+                </div>
+              }
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label">Categoría</label>
+
+              <select class="form-select"
+                      name="categoria"
+                      [(ngModel)]="newPromocion.categoria"
+                      required
+                      #categoria="ngModel">
+
+                <option value="">Selecciona una categoría</option>
+                <option value="calzado">Calzado</option>
+                <option value="ropa-superior">Ropa Superior</option>
+                <option value="ropa-inferior">Ropa Inferior</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="general">Ofertas Generales</option>
+
+              </select>
+
+              @if(categoria.invalid && categoria.touched){
+                <div class="text-danger small">
+                  ⚠ Selecciona una categoría
+                </div>
+              }
+            </div>
+
+            <div class="col-12 col-md-6 d-flex align-items-end">
+              <div class="form-check form-switch">
+                <input class="form-check-input"
+                       type="checkbox"
+                       name="activa"
+                       [(ngModel)]="newPromocion.activa"
+                       id="activa">
+                <label class="form-check-label ms-2" for="activa">
+                  Promoción activa
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Imagen</label>
+
+              <input type="file"
+                     class="form-control"
+                     name="image"
+                     #fileImage
+                     (change)="changeImage(fileImage)">
+            </div>
+
+            @if(newPromocion.image) {
+              <div class="col-12 text-center">
+                <img [src]="newPromocion.image"
+                     class="img-preview">
+              </div>
+            }
+
+            <div class="col-12 mt-3">
+              <button type="submit"
+                      class="btn btn-primary w-100"
+                      [disabled]="formPromocion.invalid">
+                Crear Promoción
+              </button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
